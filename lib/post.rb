@@ -33,7 +33,7 @@ class Post
     # Сохраним в переменной current_path место, откуда запустили программу
     current_path = File.dirname(__FILE__)
 
-    file_name = @created_at.strftime("#{self.class.name}_%Y-%m-%d_%H-%M-%S.txt")
+    file_name = @created_at.strftime("#{self.class.name}_%у-%m-%d_%H-%M-%S.txt")
 
     # Склеиваем путь из относительного пути к папке и названия файла
     current_path + '/' + file_name
